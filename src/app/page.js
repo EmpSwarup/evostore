@@ -1,5 +1,17 @@
+import Carousel from "@/components/carousel/Carousel";
+import Hero from "@/components/hero/Hero";
+import Latest from "@/components/latest/Latest";
+import Payment from "@/components/payment/Payment";
+import Emi from "@/components/emi/Emi";
+
 export default function Home() {
   return (
-   <h1>Hello!</h1>
+   <>
+   <Hero />
+   <Carousel />
+   <Latest />
+   <Emi />
+   <Payment />
+   </>
   );
 }
