@@ -1,9 +1,63 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
+import logo from "../../../public/evo-store-logo.png"
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <nav className="bg-black text-white p-4">
+    <div className="container mx-auto flex justify-between items-center">
+      {/* Left: Logo */}
+      <div className="flex items-center">
+        <a href="/" className="mr-4">
+          <div>
+            <Image
+              width={250}
+              height={175}
+              src={logo}
+              alt="Logo"
+            />
+          </div>
+        </a>
+      </div>
 
-export default Navbar
+        {/* Middle: Search and Links */}
+        <div className="hidden md:flex flex-col md:flex-row items-center md:space-x-4">
+          {/* Search Bar */}
+          <div className="rounded-lg mb-2 md:mb-0">
+            <input type="search" placeholder="Search..." className="rounded-lg px-4 py-2" />
+          </div>
+          {/* Links with Dropdown */}
+          <div className="relative group">
+            <button className="px-4 py-2 rounded-md hover:bg-gray-700">Brands</button>
+            <div className="absolute hidden group-hover:block bg-gray-700">
+              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Brand 1</a>
+              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Brand 2</a>
+            </div>
+          </div>
+          <div className="relative group">
+            <button className="px-4 py-2 rounded-md hover:bg-gray-700">Products</button>
+            <div className="absolute hidden group-hover:block bg-gray-700">
+              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Product 1</a>
+              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Product 2</a>
+            </div>
+          </div>
+          <div className="relative group">
+            <button className="px-4 py-2 rounded-md hover:bg-gray-700">Deals</button>
+            <div className="absolute hidden group-hover:block bg-gray-700">
+              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Deal 1</a>
+              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Deal 2</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Right: Cart and User */}
+        <div className="flex items-center space-x-4">
+          <a href="#" className="hover:text-gray-400">Cart</a>
+          <a href="#" className="hover:text-gray-400">User</a>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
