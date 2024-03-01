@@ -23,7 +23,7 @@ const Navbar = () => {
         {/* Middle: Search and Links */}
         <div className="hidden md:flex flex-col md:flex-row items-center md:space-x-4">
           {/* Search Bar */}
-          <div className="rounded-lg mb-2 md:mb-0">
+          <div className="mb-2 md:mb-0">
             <input type="search" placeholder="Search..." className="rounded-lg px-4 py-2" />
           </div>
           {/* Links with Dropdown */}
