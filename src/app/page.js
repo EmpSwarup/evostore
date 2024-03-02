@@ -7,8 +7,8 @@ import Emi from "@/components/emi/Emi";
 export default function Home() {
   return (
    <>
-   <Hero />
    <Carousel />
+   <Hero />
    <Latest />
    <Emi />
    <Payment />
