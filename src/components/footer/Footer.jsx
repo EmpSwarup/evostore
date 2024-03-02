@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         <p class="mt-4 max-w-xs text-gray-200">
-        Apple Authorized Reseller and Service Provider.
+        Apple Authorized Reseller and Service Provider in Nepal.
         </p>
 
         <ul class="mt-8 flex gap-6">
