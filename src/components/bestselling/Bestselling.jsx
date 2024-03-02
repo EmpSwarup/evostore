@@ -1,12 +1,11 @@
 import React from 'react';
-import Card from '../card/Card'; // Ensure the path is correct
+import Card from '../card/Card';
 
 const Latest = () => {
   return (
-    // Use the full width and manage padding with px-4 for some spacing
     <div className="w-full bg-white py-8 px-4">
-      <div className="text-3xl font-bold text-black text-center mb-8">Latest in Store</div>
-      <div className="mx-auto max-w-screen-xl"> {/* This centers the content and applies a max-width */}
+      <div className="text-3xl font-bold text-black text-center mb-8">Best Selling</div>
+      <div className="mx-auto max-w-screen-xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Cards */}
           <Card

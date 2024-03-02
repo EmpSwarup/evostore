@@ -31,24 +31,15 @@ const Navbar = () => {
           <div className="relative group">
 
             <button className="px-4 py-2 rounded-md hover:bg-gray-700">Brands</button>
-            <div className="absolute hidden group-hover:block bg-gray-700">
-              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Brand 1</a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Brand 2</a>
-            </div>
+
           </div>
           <div className="relative group">
             <button className="px-4 py-2 rounded-md hover:bg-gray-700">Products</button>
-            <div className="absolute hidden group-hover:block bg-gray-700">
-              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Product 1</a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Product 2</a>
-            </div>
+
           </div>
           <div className="relative group">
             <button className="px-4 py-2 rounded-md hover:bg-gray-700">Deals</button>
-            <div className="absolute hidden group-hover:block bg-gray-700">
-              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Deal 1</a>
-              <a href="#" className="block px-4 py-2 hover:bg-gray-600">Deal 2</a>
-            </div>
+
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-import first from '../../public/1.jpg'
+import first from '../../public/5.png'
 import second from '../../public/2.jpg'
 import third from '../../public/3.jpg'
 import fourth from '../../public/4.png'

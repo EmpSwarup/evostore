@@ -15,10 +15,10 @@ import 'swiper/css/pagination';
 
 const Carousel = () => {
   return (
-    <div className='container mt-6'>
+    <div className='mt-6 flex w-full items-center justify-center'>
     <Swiper
       navigation
-      pagination={{ type: 'fraction' }}
+
 
       modules={[Navigation, Pagination, Autoplay]}
       // Autoplay settings
@@ -27,15 +27,15 @@ const Carousel = () => {
         disableOnInteraction: false,
       }}
       onSwiper={swiper => console.log(swiper)}
-      className='h-96 w-full rounded-lg'
+      className='h-full w-full rounded-lg'
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <div className='flex h-full w-full items-center justify-center'>
+          <div className='flex w-full items-center justify-center'>
             <Image
               src={image.src}
               alt={image.alt}
-              className='block h-full w-full object-cover'
+              className='block w-full object-cover'
             />
           </div>
         </SwiperSlide>
